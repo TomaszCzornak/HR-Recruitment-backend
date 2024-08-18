@@ -1,6 +1,12 @@
-package reskilled.mentoring.reskilled.job.api;
+package com.spring.hrrecruitmentbackend.job.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.spring.hrrecruitmentbackend.Utils.JobStub;
+import com.spring.hrrecruitmentbackend.job.model.entity.Job;
+import com.spring.hrrecruitmentbackend.job.model.request.JobRequest;
+import com.spring.hrrecruitmentbackend.job.model.response.JobResponse;
+import com.spring.hrrecruitmentbackend.job.service.JobService;
+import com.spring.hrrecruitmentbackend.utils.JobMapper;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -14,12 +20,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import reskilled.mentoring.reskilled.Utils.JobStub;
-import reskilled.mentoring.reskilled.job.model.entity.Job;
-import reskilled.mentoring.reskilled.job.model.request.JobRequest;
-import reskilled.mentoring.reskilled.job.model.response.JobResponse;
-import reskilled.mentoring.reskilled.job.service.JobService;
-import reskilled.mentoring.reskilled.utils.JobMapper;
+
 
 import javax.ws.rs.core.MediaType;
 import java.util.List;

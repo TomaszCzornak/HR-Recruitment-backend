@@ -1,24 +1,25 @@
-package reskilled.mentoring.reskilled.candidate.service;
+package com.spring.hrrecruitmentbackend.candidate.service;
 
+import com.spring.hrrecruitmentbackend.Utils.CandidateStub;
+import com.spring.hrrecruitmentbackend.candidate.model.entity.Candidate;
+import com.spring.hrrecruitmentbackend.candidate.model.request.CandidateRequest;
+import com.spring.hrrecruitmentbackend.candidate.model.response.CandidateResponse;
+import com.spring.hrrecruitmentbackend.candidate.repository.CandidateRepository;
+import com.spring.hrrecruitmentbackend.user.model.entity.User;
+import com.spring.hrrecruitmentbackend.user.service.UsersService;
+import com.spring.hrrecruitmentbackend.utils.CandidateMapper;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import reskilled.mentoring.reskilled.Utils.CandidateStub;
-import reskilled.mentoring.reskilled.candidate.model.entity.Candidate;
-import reskilled.mentoring.reskilled.candidate.model.request.CandidateRequest;
-import reskilled.mentoring.reskilled.candidate.model.response.CandidateResponse;
-import reskilled.mentoring.reskilled.candidate.repository.CandidateRepository;
-import reskilled.mentoring.reskilled.user.model.entity.User;
-import reskilled.mentoring.reskilled.user.service.UsersService;
-import reskilled.mentoring.reskilled.utils.CandidateMapper;
 
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.BDDMockito.*;
 
 

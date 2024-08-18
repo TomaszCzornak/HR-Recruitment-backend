@@ -94,7 +94,7 @@ public class SecurityConfig {
                 CorsConfiguration config = new CorsConfiguration();
                 config.setAllowCredentials(true);
                 config.addAllowedOrigin("http://localhost:4200");
-                config.addAllowedOrigin("http://localhost:63342");
+                config.addAllowedOrigin("http://localhost:61058");
                 config.addAllowedHeader("*");
                 config.addAllowedMethod("*");
                 config.setExposedHeaders(

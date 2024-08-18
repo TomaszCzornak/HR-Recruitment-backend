@@ -1,5 +1,10 @@
-package reskilled.mentoring.reskilled.login.service;
+package com.spring.hrrecruitmentbackend.login.service;
 
+import com.spring.hrrecruitmentbackend.Utils.UserStub;
+import com.spring.hrrecruitmentbackend.login.model.LoginRequest;
+import com.spring.hrrecruitmentbackend.security.JwtService;
+import com.spring.hrrecruitmentbackend.user.model.entity.User;
+import com.spring.hrrecruitmentbackend.user.service.UsersService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -11,11 +16,7 @@ import org.springframework.security.authentication.AuthenticationManager;
 
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import reskilled.mentoring.reskilled.Utils.UserStub;
-import reskilled.mentoring.reskilled.login.model.LoginRequest;
-import reskilled.mentoring.reskilled.security.JwtService;
-import reskilled.mentoring.reskilled.user.model.entity.User;
-import reskilled.mentoring.reskilled.user.service.UsersService;
+
 
 import java.util.ArrayList;
 import java.util.Optional;

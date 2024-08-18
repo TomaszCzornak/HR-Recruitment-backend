@@ -1,5 +1,8 @@
-package reskilled.mentoring.reskilled.email;
+package com.spring.hrrecruitmentbackend.email;
 
+import com.spring.hrrecruitmentbackend.registration.model.entity.ResetOperations;
+import com.spring.hrrecruitmentbackend.registration.service.ResetOperationService;
+import com.spring.hrrecruitmentbackend.user.model.entity.User;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
@@ -9,9 +12,7 @@ import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.test.context.ActiveProfiles;
-import reskilled.mentoring.reskilled.registration.model.entity.ResetOperations;
-import reskilled.mentoring.reskilled.registration.service.ResetOperationService;
-import reskilled.mentoring.reskilled.user.model.entity.User;
+
 
 import java.io.*;
 

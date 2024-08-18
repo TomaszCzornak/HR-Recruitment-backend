@@ -3,6 +3,7 @@ package com.spring.hrrecruitmentbackend.registration.api;
 import com.spring.hrrecruitmentbackend.registration.model.request.ChangePasswordData;
 import com.spring.hrrecruitmentbackend.registration.model.request.RegistrationRequest;
 import com.spring.hrrecruitmentbackend.registration.model.request.ResetPasswordData;
+import com.spring.hrrecruitmentbackend.registration.model.response.ActivationResponse;
 import com.spring.hrrecruitmentbackend.registration.service.RegistrationService;
 import com.spring.hrrecruitmentbackend.registration.service.UserRegistrationFacade;
 import com.spring.hrrecruitmentbackend.user.exceptions.UserNotFoundException;
@@ -18,7 +19,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import reskilled.mentoring.reskilled.registration.model.response.ActivationResponse;
 
 
 

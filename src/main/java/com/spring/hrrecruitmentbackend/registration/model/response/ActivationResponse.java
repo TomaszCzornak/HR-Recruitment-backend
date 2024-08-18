@@ -1,4 +1,4 @@
-package reskilled.mentoring.reskilled.registration.model.response;
+package com.spring.hrrecruitmentbackend.registration.model.response;
 
 
 import lombok.AllArgsConstructor;

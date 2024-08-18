@@ -1,4 +1,4 @@
-package reskilled.mentoring.reskilled.gate;
+package com.spring.hrrecruitmentbackend.gate;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;

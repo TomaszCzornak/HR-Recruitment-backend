@@ -1,21 +1,22 @@
-package reskilled.mentoring.reskilled.registration.service;
+package com.spring.hrrecruitmentbackend.registration.service;
 
+import com.spring.hrrecruitmentbackend.Utils.UserStub;
+import com.spring.hrrecruitmentbackend.email.EmailService;
+import com.spring.hrrecruitmentbackend.registration.model.entity.ResetOperations;
+import com.spring.hrrecruitmentbackend.registration.model.request.ChangePasswordData;
+import com.spring.hrrecruitmentbackend.registration.repository.RegistrationRepository;
+import com.spring.hrrecruitmentbackend.registration.repository.ResetOperationsRepository;
+import com.spring.hrrecruitmentbackend.security.Role;
+import com.spring.hrrecruitmentbackend.user.model.entity.User;
+import com.spring.hrrecruitmentbackend.user.repository.UserRepository;
+import com.spring.hrrecruitmentbackend.user.service.UsersService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import reskilled.mentoring.reskilled.email.EmailService;
-import reskilled.mentoring.reskilled.Utils.UserStub;
-import reskilled.mentoring.reskilled.registration.model.entity.ResetOperations;
-import reskilled.mentoring.reskilled.registration.model.request.ChangePasswordData;
-import reskilled.mentoring.reskilled.registration.repository.RegistrationRepository;
-import reskilled.mentoring.reskilled.registration.repository.ResetOperationsRepository;
-import reskilled.mentoring.reskilled.security.Role;
-import reskilled.mentoring.reskilled.user.model.entity.User;
-import reskilled.mentoring.reskilled.user.repository.UserRepository;
-import reskilled.mentoring.reskilled.user.service.UsersService;
+
 
 import java.io.IOException;
 import java.util.Optional;

@@ -1,21 +1,21 @@
-package reskilled.mentoring.reskilled.recruitment.service;
+package com.spring.hrrecruitmentbackend.recruitment.service;
 
+import com.spring.hrrecruitmentbackend.Utils.JobStub;
+import com.spring.hrrecruitmentbackend.Utils.RecruitmentStub;
+import com.spring.hrrecruitmentbackend.candidate.service.CandidateService;
+import com.spring.hrrecruitmentbackend.job.model.dto.JobDto;
+import com.spring.hrrecruitmentbackend.job.model.entity.Job;
+import com.spring.hrrecruitmentbackend.job.service.JobService;
+import com.spring.hrrecruitmentbackend.recruitment.entity.Recruitment;
+import com.spring.hrrecruitmentbackend.recruitment.model.request.RecruitmentRequest;
+import com.spring.hrrecruitmentbackend.recruitment.repository.RecruitmentRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import reskilled.mentoring.reskilled.Utils.JobStub;
-import reskilled.mentoring.reskilled.Utils.RecruitmentStub;
-import reskilled.mentoring.reskilled.candidate.service.CandidateService;
-import reskilled.mentoring.reskilled.job.model.dto.JobDto;
-import reskilled.mentoring.reskilled.job.model.entity.Job;
-import reskilled.mentoring.reskilled.job.service.JobService;
-import reskilled.mentoring.reskilled.recruitment.entity.Recruitment;
-import reskilled.mentoring.reskilled.recruitment.model.request.RecruitmentRequest;
-import reskilled.mentoring.reskilled.recruitment.model.response.RecruitmentResponse;
-import reskilled.mentoring.reskilled.recruitment.repository.RecruitmentRepository;
+import com.spring.hrrecruitmentbackend.recruitment.model.response.RecruitmentResponse;
 
 import java.util.List;
 import java.util.Optional;

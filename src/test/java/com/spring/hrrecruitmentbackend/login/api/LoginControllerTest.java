@@ -1,6 +1,10 @@
-package reskilled.mentoring.reskilled.login.api;
+package com.spring.hrrecruitmentbackend.login.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.spring.hrrecruitmentbackend.Utils.UserStub;
+import com.spring.hrrecruitmentbackend.login.model.LoginRequest;
+import com.spring.hrrecruitmentbackend.login.service.UserLoginFacade;
+import com.spring.hrrecruitmentbackend.user.model.entity.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -12,10 +16,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import reskilled.mentoring.reskilled.Utils.UserStub;
-import reskilled.mentoring.reskilled.login.model.LoginRequest;
-import reskilled.mentoring.reskilled.login.service.UserLoginFacade;
-import reskilled.mentoring.reskilled.user.model.entity.User;
+
 
 import javax.ws.rs.core.MediaType;
 

@@ -1,6 +1,17 @@
-package reskilled.mentoring.reskilled.registration.api;
+package com.spring.hrrecruitmentbackend.registration.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.spring.hrrecruitmentbackend.Utils.RegistrationStub;
+import com.spring.hrrecruitmentbackend.Utils.UserStub;
+import com.spring.hrrecruitmentbackend.registration.model.request.ChangePasswordData;
+import com.spring.hrrecruitmentbackend.registration.model.request.RegistrationRequest;
+import com.spring.hrrecruitmentbackend.registration.model.request.ResetPasswordData;
+import com.spring.hrrecruitmentbackend.registration.model.response.ActivationResponse;
+import com.spring.hrrecruitmentbackend.registration.service.RegistrationService;
+import com.spring.hrrecruitmentbackend.registration.service.UserRegistrationFacade;
+import com.spring.hrrecruitmentbackend.user.model.entity.User;
+import com.spring.hrrecruitmentbackend.user.model.response.UserResponse;
+import com.spring.hrrecruitmentbackend.user.service.UsersService;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -11,17 +22,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import reskilled.mentoring.reskilled.Utils.RegistrationStub;
-import reskilled.mentoring.reskilled.Utils.UserStub;
-import reskilled.mentoring.reskilled.registration.model.request.ChangePasswordData;
-import reskilled.mentoring.reskilled.registration.model.request.RegistrationRequest;
-import reskilled.mentoring.reskilled.registration.model.request.ResetPasswordData;
-import reskilled.mentoring.reskilled.registration.model.response.ActivationResponse;
-import reskilled.mentoring.reskilled.registration.service.RegistrationService;
-import reskilled.mentoring.reskilled.registration.service.UserRegistrationFacade;
-import reskilled.mentoring.reskilled.user.model.entity.User;
-import reskilled.mentoring.reskilled.user.model.response.UserResponse;
-import reskilled.mentoring.reskilled.user.service.UsersService;
+
 
 import javax.ws.rs.core.MediaType;
 import java.sql.Timestamp;

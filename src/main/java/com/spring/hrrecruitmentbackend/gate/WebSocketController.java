@@ -1,13 +1,13 @@
-package reskilled.mentoring.reskilled.gate;
+package com.spring.hrrecruitmentbackend.gate;
 
-import com.spring.hrrecruitmentbackend.gate.Event;
+
 import com.spring.hrrecruitmentbackend.user.service.UsersService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
-import org.springframework.messaging.simp.SimpMessageSendingOperations;
+
 
 @Controller
 @RequiredArgsConstructor
@@ -15,7 +15,6 @@ public class WebSocketController {
 
 
     private final UsersService usersService;
-    private final SimpMessageSendingOperations messageTemplate;
 
     @MessageMapping("/read")
     @SendTo("/topic/events")

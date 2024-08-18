@@ -1,6 +1,10 @@
-package reskilled.mentoring.reskilled.recruitment.api;
+package com.spring.hrrecruitmentbackend.recruitment.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.spring.hrrecruitmentbackend.Utils.RecruitmentStub;
+import com.spring.hrrecruitmentbackend.recruitment.model.request.RecruitmentRequest;
+import com.spring.hrrecruitmentbackend.recruitment.model.response.RecruitmentResponse;
+import com.spring.hrrecruitmentbackend.recruitment.service.RecruitmentService;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -11,10 +15,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import reskilled.mentoring.reskilled.Utils.RecruitmentStub;
-import reskilled.mentoring.reskilled.recruitment.model.request.RecruitmentRequest;
-import reskilled.mentoring.reskilled.recruitment.model.response.RecruitmentResponse;
-import reskilled.mentoring.reskilled.recruitment.service.RecruitmentService;
+
 
 import javax.ws.rs.core.MediaType;
 import java.util.List;
